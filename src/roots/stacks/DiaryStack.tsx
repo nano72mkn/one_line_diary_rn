@@ -1,16 +1,16 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { TestScreen } from 'screens/Test';
+import { DiaryListScreen } from 'screens/DiaryListScreen';
 
 export type DiaryStackParamList = {
-  Test: undefined;
+  DiaryList: undefined;
 };
 
 const Stack = createNativeStackNavigator<DiaryStackParamList>();
 
 export const DiaryStack = () => {
   return (
-    <Stack.Navigator initialRouteName="Test">
-      <Stack.Screen name="Test" component={TestScreen} />
+    <Stack.Navigator initialRouteName="DiaryList">
+      <Stack.Screen name="DiaryList" component={DiaryListScreen} />
     </Stack.Navigator>
   );
 }
