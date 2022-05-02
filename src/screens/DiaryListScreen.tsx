@@ -3,7 +3,7 @@ import React from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { View, Text } from 'react-native';
 
-import type { DiaryStackParamList } from 'roots/stacks/DiaryStack';
+import type { DiaryStackParamList } from 'src/roots/stacks/DiaryStack';
 
 type Props = NativeStackScreenProps<DiaryStackParamList, 'DiaryList'>;
 

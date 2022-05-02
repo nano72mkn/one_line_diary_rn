@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { DiaryListScreen } from 'screens/DiaryListScreen';
+import { DiaryListScreen } from 'src/screens/DiaryListScreen';
 
 export type DiaryStackParamList = {
   DiaryList: undefined;

@@ -1,8 +1,7 @@
 import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
-
-import { DiaryStack } from './stacks/DiaryStack';
+import { DiaryStack } from 'src/roots/stacks/DiaryStack';
 
 export const MainRoot: React.FC = () => {
   return (
