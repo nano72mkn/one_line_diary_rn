@@ -1,12 +1,14 @@
 import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
-import { DiaryStack } from 'src/roots/stacks/DiaryStack';
+
+import { NavigationDrawer } from './drawers/NavigationDrawer';
 
 export const MainRoot: React.FC = () => {
   return (
     <NavigationContainer>
-      <DiaryStack />
+      {/* <DiaryStack /> */}
+      <NavigationDrawer />
     </NavigationContainer>
   );
 };
