@@ -7,7 +7,6 @@ import { NavigationDrawer } from './drawers/NavigationDrawer';
 export const MainRoot: React.FC = () => {
   return (
     <NavigationContainer>
-      {/* <DiaryStack /> */}
       <NavigationDrawer />
     </NavigationContainer>
   );

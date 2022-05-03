@@ -1,12 +1,4 @@
 {
-	"m-5": {
-		"style": {
-			"marginTop": 20,
-			"marginRight": 20,
-			"marginBottom": 20,
-			"marginLeft": 20
-		}
-	},
 	"mb-3": {
 		"style": {
 			"marginBottom": 12
@@ -17,14 +9,14 @@
 			"marginBottom": 16
 		}
 	},
+	"mr-4": {
+		"style": {
+			"marginRight": 16
+		}
+	},
 	"flex": {
 		"style": {
 			"display": "flex"
-		}
-	},
-	"h-3": {
-		"style": {
-			"height": 12
 		}
 	},
 	"h-4": {
@@ -35,11 +27,6 @@
 	"w-full": {
 		"style": {
 			"width": "100%"
-		}
-	},
-	"w-3": {
-		"style": {
-			"width": 12
 		}
 	},
 	"w-4": {
@@ -83,12 +70,12 @@
 			"borderBottomLeftRadius": 9999
 		}
 	},
-	"border": {
+	"rounded-lg": {
 		"style": {
-			"borderTopWidth": 1,
-			"borderRightWidth": 1,
-			"borderBottomWidth": 1,
-			"borderLeftWidth": 1
+			"borderTopLeftRadius": 8,
+			"borderTopRightRadius": 8,
+			"borderBottomRightRadius": 8,
+			"borderBottomLeftRadius": 8
 		}
 	},
 	"border-2": {
@@ -120,12 +107,12 @@
 			"backgroundColor": "rgb(252 165 165 / var(--tw-bg-opacity))"
 		}
 	},
-	"p-5": {
+	"p-4": {
 		"style": {
-			"paddingTop": 20,
-			"paddingRight": 20,
-			"paddingBottom": 20,
-			"paddingLeft": 20
+			"paddingTop": 16,
+			"paddingRight": 16,
+			"paddingBottom": 16,
+			"paddingLeft": 16
 		}
 	},
 	"p-3": {
@@ -136,22 +123,17 @@
 			"paddingLeft": 12
 		}
 	},
-	"p-4": {
+	"p-5": {
 		"style": {
-			"paddingTop": 16,
-			"paddingRight": 16,
-			"paddingBottom": 16,
-			"paddingLeft": 16
+			"paddingTop": 20,
+			"paddingRight": 20,
+			"paddingBottom": 20,
+			"paddingLeft": 20
 		}
 	},
 	"pb-3": {
 		"style": {
 			"paddingBottom": 12
-		}
-	},
-	"pb-4": {
-		"style": {
-			"paddingBottom": 16
 		}
 	},
 	"text-right": {
@@ -175,6 +157,18 @@
 		"style": {
 			"--tw-text-opacity": 1,
 			"color": "rgb(156 163 175 / var(--tw-text-opacity))"
+		}
+	},
+	"text-gray-700": {
+		"style": {
+			"--tw-text-opacity": 1,
+			"color": "rgb(55 65 81 / var(--tw-text-opacity))"
+		}
+	},
+	"text-red-500": {
+		"style": {
+			"--tw-text-opacity": 1,
+			"color": "rgb(239 68 68 / var(--tw-text-opacity))"
 		}
 	}
 }
