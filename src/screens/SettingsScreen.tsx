@@ -3,9 +3,9 @@ import React from 'react';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { View } from 'react-native';
 
-import type { DiaryStackParamList } from 'src/roots/stacks/DiaryStack';
+import type { NavigationDrawerParamList } from 'src/roots/drawers/NavigationDrawer';
 
-type Props = NativeStackScreenProps<DiaryStackParamList, 'Settings'>;
+type Props = NativeStackScreenProps<NavigationDrawerParamList, 'Settings'>;
 
 export const SettingsScreen: React.FC<Props> = () => {
   return (

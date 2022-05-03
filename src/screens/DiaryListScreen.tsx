@@ -4,10 +4,9 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { View } from 'react-native';
 import { DiaryItemGroup } from 'src/components/DiaryItemGroup';
 import { WeekTile } from 'src/components/WeekTile';
+import { NavigationDrawerParamList } from 'src/roots/drawers/NavigationDrawer';
 
-import type { DiaryStackParamList } from 'src/roots/stacks/DiaryStack';
-
-type Props = NativeStackScreenProps<DiaryStackParamList, 'DiaryList'>;
+type Props = NativeStackScreenProps<NavigationDrawerParamList, 'DiaryList'>;
 
 export const DiaryListScreen: React.FC<Props> = () => {
   return (

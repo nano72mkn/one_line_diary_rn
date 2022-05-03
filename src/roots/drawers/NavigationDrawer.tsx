@@ -5,7 +5,7 @@ import { DiaryListScreen } from 'src/screens/DiaryListScreen';
 import { SettingsScreen } from 'src/screens/SettingsScreen';
 
 export type NavigationDrawerParamList = {
-  'One Line Diary': undefined;
+  DiaryList: undefined;
   Settings: undefined;
 };
 
@@ -13,9 +13,17 @@ const Drawer = createDrawerNavigator<NavigationDrawerParamList>();
 
 export const NavigationDrawer = () => {
   return (
-    <Drawer.Navigator initialRouteName="One Line Diary">
-      <Drawer.Screen name="One Line Diary" component={DiaryListScreen} />
-      <Drawer.Screen name="Settings" component={SettingsScreen} />
+    <Drawer.Navigator initialRouteName="DiaryList">
+      <Drawer.Screen
+        name="DiaryList"
+        component={DiaryListScreen}
+        options={{ title: '日記' }}
+      />
+      <Drawer.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{ title: '設定' }}
+      />
     </Drawer.Navigator>
   );
 };
