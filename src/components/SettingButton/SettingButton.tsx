@@ -3,14 +3,20 @@ import React from 'react';
 import { ButtonProps, TouchableOpacity, View, Text } from 'react-native';
 import { useTailwind } from 'tailwind-rn';
 
+import { ChevronRightIcon } from '../Icons/ChevronRightIcon';
+
+type SettingButtonVariant = 'link';
+
 type SettingButtonProps = {
   icon?: React.FC;
   textColor?: string;
+  valiant?: SettingButtonVariant;
 } & ButtonProps;
 
 export const SettingButton: React.FC<SettingButtonProps> = ({
   icon: Icon,
   textColor,
+  valiant,
   ...buttonProps
 }) => {
   const tailwind = useTailwind();
@@ -41,14 +47,21 @@ export const SettingButton: React.FC<SettingButtonProps> = ({
           'flex flex-row items-center p-4 bg-white w-full rounded-lg',
         )}
       >
-        {Icon && (
-          <View style={tailwind('mr-4')}>
-            <Icon />
+        <View style={tailwind('flex flex-row items-center flex-1')}>
+          {Icon && (
+            <View style={tailwind('mr-4')}>
+              <Icon />
+            </View>
+          )}
+          <Text style={tailwind(`${textColor ?? 'text-gray-700'}`)}>
+            {buttonProps.title}
+          </Text>
+        </View>
+        {valiant === 'link' && (
+          <View style={tailwind('ml-4')}>
+            <ChevronRightIcon size={14} />
           </View>
         )}
-        <Text style={tailwind(`${textColor ?? 'text-gray-700'}`)}>
-          {buttonProps.title}
-        </Text>
       </View>
     </TouchableOpacity>
   );

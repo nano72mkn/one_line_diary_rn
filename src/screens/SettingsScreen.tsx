@@ -32,6 +32,7 @@ export const SettingsScreen: React.FC<Props> = ({ navigation }) => {
             title: i18n.t('license'),
             onPress: () => navigation.navigate('License'),
             icon: ClipboardListIcon,
+            valiant: 'link',
           },
         ]}
       />

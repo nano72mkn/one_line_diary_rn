@@ -24,9 +24,14 @@ export const SettingGroup: React.FC<SettingGroupProps> = ({ header, data }) => {
       )}
       <View style={tailwind('bg-white rounded-lg')}>
         {data.map((buttonProps, index) => (
-          <View key={index} style={tailwind('w-full')}>
-            <SettingButton {...buttonProps} />
-          </View>
+          <React.Fragment key={index}>
+            <View style={tailwind('w-full')}>
+              <SettingButton {...buttonProps} />
+            </View>
+            {index !== data.length - 1 && (
+              <View style={tailwind('mx-4 h-[1px] w-auto bg-slate-100')} />
+            )}
+          </React.Fragment>
         ))}
       </View>
     </View>
