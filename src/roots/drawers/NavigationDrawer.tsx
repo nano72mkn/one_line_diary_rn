@@ -5,9 +5,11 @@ import { DiaryListScreen } from 'src/screens/DiaryListScreen';
 import { SettingsScreen } from 'src/screens/SettingsScreen';
 import { i18n } from 'src/utils/i18n';
 
+import { SettingStackParamList } from '../stacks/SettingStack';
+
 export type NavigationDrawerParamList = {
   DiaryList: undefined;
-  Settings: undefined;
+  Settings: SettingStackParamList;
 };
 
 const Drawer = createDrawerNavigator<NavigationDrawerParamList>();
@@ -18,7 +20,7 @@ export const NavigationDrawer = () => {
       <Drawer.Screen
         name="DiaryList"
         component={DiaryListScreen}
-        options={{ title: i18n.t('diary') }}
+        options={{ title: i18n.t('appName'), drawerLabel: i18n.t('diary') }}
       />
       <Drawer.Screen
         name="Settings"
