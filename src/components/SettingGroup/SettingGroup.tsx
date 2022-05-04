@@ -15,7 +15,13 @@ export const SettingGroup: React.FC<SettingGroupProps> = ({ header, data }) => {
 
   return (
     <View style={tailwind('p-4 w-full')}>
-      {header && <Text style={tailwind('text-gray-600 mb-3')}>{header}</Text>}
+      {header && (
+        <View style={tailwind('p-3')}>
+          <Text style={tailwind('text-gray-600 text-lg font-bold')}>
+            {header}
+          </Text>
+        </View>
+      )}
       <View style={tailwind('bg-white rounded-lg')}>
         {data.map((buttonProps, index) => (
           <View key={index} style={tailwind('w-full')}>
