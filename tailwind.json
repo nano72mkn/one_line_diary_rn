@@ -1,4 +1,9 @@
 {
+	"absolute": {
+		"style": {
+			"position": "absolute"
+		}
+	},
 	"m-auto": {
 		"style": {
 			"marginTop": "auto",
