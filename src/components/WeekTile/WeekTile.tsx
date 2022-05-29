@@ -15,7 +15,7 @@ export const WeekTile: React.FC = () => {
   );
 
   return (
-    <View style={tailwind('p-5 w-full')}>
+    <View style={tailwind('w-full')}>
       <View
         style={[
           tailwind(

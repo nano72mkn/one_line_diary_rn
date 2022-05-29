@@ -5,17 +5,25 @@ import { useTailwind } from 'tailwind-rn';
 
 import { DiaryItem } from '../DiaryItem/DiaryItem';
 import { DiaryItemTitle } from '../DiaryItemTitle';
+import { WeekTile } from '../WeekTile';
 
 export const DiaryItemGroup: React.FC = () => {
   const tailwind = useTailwind();
 
+  const diaryData = [
+    { date: '2022-12-30', data: [{ id: '1' }, { id: '2' }, { id: '3' }] },
+    { date: '2022-12-31', data: [{ id: '1' }, { id: '2' }, { id: '3' }] },
+  ];
+
   return (
     <SectionList
+      ListHeaderComponent={
+        <View style={tailwind('mb-5')}>
+          <WeekTile />
+        </View>
+      }
       style={tailwind('p-3 w-full')}
-      sections={[
-        { date: '2022-12-30', data: [{ id: '1' }, { id: '2' }, { id: '3' }] },
-        { date: '2022-12-31', data: [{ id: '1' }, { id: '2' }, { id: '3' }] },
-      ]}
+      sections={diaryData}
       renderItem={() => (
         <View style={tailwind('mb-3')}>
           <DiaryItem />

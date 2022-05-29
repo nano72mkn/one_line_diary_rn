@@ -35,6 +35,10 @@
   margin-left: 1rem
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem
+}
+
 .flex {
   display: flex
 }
@@ -178,6 +182,10 @@
 
 .p-5 {
   padding: 1.25rem
+}
+
+.p-10 {
+  padding: 2.5rem
 }
 
 .px-4 {
